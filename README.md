@@ -1,7 +1,7 @@
-## Welcome to GitHub Pages
+## RimWorldBot (Twitch Toolkit)
 
 
-1. Clone Repo
-2. Upload your itemlist.json and eventlist.json
+Форк мода Twitch Toolkit с русской локализацией by itsrec0very.
+Мод переведен на 70%, остальной оригинальный текст(Eng version) находится на hardcode-уровне.
 
 
