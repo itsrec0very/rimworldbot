@@ -1,4 +1,4 @@
-## RimWorldBot (Twitch Toolkit)
+## RimBot (Twitch Toolkit)
 
 
 Форк мода Twitch Toolkit с русской локализацией by itsrec0very.
