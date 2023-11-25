@@ -86,11 +86,6 @@
 		"karmatype": "Good"
 	},
 	{
-		"abr": "wandererjoins",
-		"price": 50,
-		"karmatype": "Good"
-	},
-	{
 		"abr": "resourcepodcrash",
 		"price": 300,
 		"karmatype": "Good"
@@ -98,11 +93,6 @@
 	{
 		"abr": "tradercaravan",
 		"price": 275,
-		"karmatype": "Good"
-	},
-	{
-		"abr": "orbitaltraderarrival",
-		"price": 350,
 		"karmatype": "Good"
 	},
 	{
@@ -182,12 +172,12 @@
 	},
 	{
 		"abr": "shippartpoison",
-		"price": 1900,
+		"price": 5000,
 		"karmatype": "Bad"
 	},
 	{
 		"abr": "shippartpsychic",
-		"price": 2400,
+		"price": 5000,
 		"karmatype": "Bad"
 	},
 	{
@@ -231,11 +221,6 @@
 		"karmatype": "Bad"
 	},
 	{
-		"abr": "predators",
-		"price": 2500,
-		"karmatype": "Bad"
-	},
-	{
 		"abr": "randomdisease",
 		"price": 1000,
 		"karmatype": "Bad"
@@ -261,28 +246,13 @@
 		"karmatype": "Good"
 	},
 	{
-		"abr": "prisoner",
-		"price": 800,
-		"karmatype": "Good"
-	},
-	{
 		"abr": "visitcolony",
 		"price": 300,
 		"karmatype": "Good"
 	},
 	{
-		"abr": "torytalkervote",
-		"price": 750,
-		"karmatype": "Neutral"
-	},
-	{
-		"abr": "hodlbotvote",
-		"price": 600,
-		"karmatype": "Neutral"
-	},
-	{
 		"abr": "reviveme",
-		"price": 2833,
+		"price": 4000,
 		"karmatype": "Good"
 	},
 	{
@@ -311,5 +281,5 @@
 		"karmatype": "Good"
 	}
 	],
-	"total": 62
+	"total": 56
 }
