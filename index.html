@@ -41,19 +41,23 @@
                 <p>Данный мод написан hodlhodl, который интегрирует сюжетные решения в голосования в чате, награждает зрителей монетами за просмотр, а эти монеты можно потратить на предметы/события в игре.</p>
 		<p>Перевел itsrec0very, специально для loskych.</p>
                 <ul class="list-group">
+		    <li class="list-group-item">!всекоманды - все доступные команды</li>
                     <li class="list-group-item">!очередь - встать в очередь поселенцев</li>
                     <li class="list-group-item">!флиртовать (ник) - флиртовать с кем-либо</li>
                     <li class="list-group-item">!оскорбить (ник) - оскорбить кого-либо</li>
+		    <li class="list-group-item">!свадьба (ник) - предложение руки и сердца</li>
+                    <li class="list-group-item">!инструкция - ссылка на сайт с доступным функционалом мода</li>
+                    <li class="list-group-item">!карма - все подробности функционала кармы</li>
+		    <li class="list-group-item">!заработок - текущий заработок монет</li>
+		    <li class="list-group-item">!баланс - текущий баланс монет и кармы</li>
+		    <li class="list-group-item">!купить (ID) (кол-во) - форма покупки предметов</li>
+		    <li class="list-group-item">!купить (ID) (ставка[необяз.]) - форма покупки предметов</li>
+		    <li class="list-group-item">!рюкзак (ID) - купить что-либо</li>
+		    <li class="list-group-item">!язастрял - в случае, если бот не исполняет ваши команды</li>
+		    <li class="list-group-item">!возрождение - возродить своего поселенца</li>
 		<p>Пока на стриме доступны только эти команды, постепенно будем добавлять ещё...</p>
-		    <li class="list-group-item">!purchaselist - gives users a link to the public purchase list</li>
-                    <li class="list-group-item">!instructions - gives users info on using the mod</li>
-                    <li class="list-group-item">!modinfo - gives users info about the mod</li>
-                    <li class="list-group-item">!modsettings - gives user info on how many coins are being earned and global settings</li>
-                    <li class="list-group-item">!giftcoins - Syntax: !giftcoins @username 100 - give another viewer your coins</li>
-                    <li class="list-group-item">!toolkitcmds - shows all available commands to the user, this does not translate by default so it can be universally recognized.</li>
-                    <li class="list-group-item">!buy ticket - join the viewer name queue</li>
-                    <li class="list-group-item">!mypawnstory - view information about your pawns backstory</li>
-                    <li class="list-group-item">!mypawnskills - view information about your pawns skills</li>
+		<p></p>
+		<p>В выпадающем списке вы можете посмотреть доступные предметы и события для покупки!</p>
                 </ul>
             </div>
         </div>
@@ -65,14 +69,14 @@
                             <form>
                                 <div class="form-group">
                                     <button class="btn btn-success" ng-class="{'active': (selected == '1')}" ng-click='selected=1'>
-                                        Items
+                                        Предметы
                                     </button>
                                     <button class="btn btn-success" ng-class="{'active': (selected == '2')}" ng-click='selected=2'>
-                                        Events
+                                        События
                                     </button>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-sm-2 col-form-label" for="">Price Between:</label>
+                                    <label class="col-sm-2 col-form-label" for="">Цена:</label>
                                     <div class="col-sm-2">
                                         <input type="number" class="form-control" id="item-price-min" placeholder="0">
                                     </div>
@@ -89,23 +93,23 @@
                         <div id="items">
                             <div class="input-group input-group-sm mb-3">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroup-sizing-sm">Search</span>
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Поиск</span>
                                 </div>
                                 <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
                             </div>
                             <p>
                                 <button type="button" class="btn btn-primary sort" data-sort="abr">
-                                    Sort
+                                    А-Я
                                 </button>
                                 <button type="button" class="btn btn-primary sort" data-sort="price">
-                                    Sort by Price
+                                    Цена
                                 </button>
                             </p>
                             <table class="table items">
                                 <tr>
-                                    <th scope="col" class="sort" data-sort="abr">Name</th>
-                                    <th scope="col" class="sort" data-sort="price">Price</th>
-                                    <th scope="col" class="sort" data-sort="category">Category</th>
+                                    <th scope="col" class="sort" data-sort="abr">ID</th>
+                                    <th scope="col" class="sort" data-sort="price">Цена</th>
+                                    <th scope="col" class="sort" data-sort="category">Категория</th>
                                 </tr>
                                 <tbody class="list">
                                 </tbody>
@@ -118,26 +122,26 @@
                         <div id="events">
                             <div class="input-group input-group-sm mb-3">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroup-sizing-sm">Search</span>
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">Поиск</span>
                                 </div>
                                 <input type="text" class="form-control search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
                             </div>
                             <p>
                                 <button type="button" class="btn btn-primary sort" data-sort="abr">
-                                    Sort
+                                    A-Z
                                 </button>
                                 <button type="button" class="btn btn-primary sort" data-sort="price">
-                                    Sort by Price
+                                    Цена
                                 </button>
                                 <button type="button" class="btn btn-primary sort" data-sort="karmatype">
-                                    Sort by Karma
+                                    Карма
                                 </button>
                             </p>
                             <table class="table events">
                                 <tr>
-                                    <th scope="col" class="sort" data-sort="abr">Name</th>
-                                    <th scope="col" class="sort" data-sort="price">Price</th>
-                                    <th scope="col" class="sort" data-sort="karmatype">Karma</th>
+                                    <th scope="col" class="sort" data-sort="abr">ID</th>
+                                    <th scope="col" class="sort" data-sort="price">Цена</th>
+                                    <th scope="col" class="sort" data-sort="karmatype">Тип кармы</th>
                                 </tr>
                                 <tbody class="list">
                                 </tbody>
